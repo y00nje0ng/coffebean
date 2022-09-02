@@ -13,81 +13,97 @@
   
   .footer{
     display: flex;
-  
     width: 100%;
     background-color: rgb(255, 255, 255);
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
   }
-  
   .abox{
+    width: 100%;
+    float: left;
+  }
+  
+  /* .abox{
     flex:1 100%;
     display: flex;
     justify-content: left;
-    margin-left: 415px;
-    
     height: 40px;
   }
   .abox a{
     color: rgba(13, 20, 26, 0.856);
     justify-content: left;
-  }
-  
-  .Ftext{
-    color: gray;
-    flex:1 100%;
-    text-align: center;
-    height: 100px;
-  }
+  } */
+
   .iconbox{
-    margin-bottom: 20px;
-    margin-right: 700px;
-    display: flex;
-    height: 40px;
+    width: 100%;
   }
 
-  .abox .a1{
+  .abox{
+    width: 100%;
+    margin-left: 15px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .a1, .a2{
     padding: 0 15px;
   }
 
-  .abox .a2{
+  .abox p{
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    float: left;
     
   }
+
+  .abox p:nth-child(1){
+    margin-right: 20px;
+  }
+
+  .a1:nth-child(2){
+    font-size: 20px;
+    line-height: 10px;
+    vertical-align: middle;
+  }
   
-  .a1::after {
+  .a1::after, .a2::after {
     content: "|";
     float: right;
     color: rgba(204, 204, 204, 0.589);
     margin-right: -17px;
   }
   
-  .a1:last-child::after {
+  .a1:last-child::after, .a2:last-child::after {
     content: "";
   }
 
   .ibox1 img{
     width: 150px;
   }
-  
-  </style>
-  <div class="iconbox">
-    <div class="ibox1">
-      <a href="#"><img src="/img/logo.png"></a></div>
-    </div>
-  </div>
 
+
+  </style>
   <div class="footer">
-    <div class="abox">
-        <p>  - CS CENTER </p>&nbsp&nbsp
-      <p class="a1" style="font-size:20px; ">051-526-1183~4</p>
-      <p  class="a1">이메일무단수집</p>
-      <p  class="a1">묻고답하지</p>
-      <p  class="a1">오시는길</p>
+    <div class="iconbox">
+      <div class="ibox1">
+        <a href="#"><img src="/img/logo.png"></a></div>
+      </div>
     </div>
-    <div class="Ftext">
-      회사 : 파이브스톤, 주소 : 경기도 고양시 삼송로 193번길 28-3 하준빌딩 401호, 대표 : 김성용,<br>
-      고객지원 : 010-2709-0828, FAX : 070-777-5555, EMAIL : fivestone55@daum.net, 사업자등록번호 : 780-42-00047, 통신판매업 : 제2015-경기-00974호<br>
-      COPYRIGHT(C) 2020 FIVESTONE. ALL RIGHT RESERVED.
+    <div class="abox">
+      <p>  - CS CENTER </p>
+      <p class="a1">051-526-1183~4</p>
+      <p class="a1">이메일무단수집</p>
+      <p class="a1">묻고답하지</p>
+      <p class="a1">오시는길</p>
+    </div>
+    <div class="abox">
+      <p style="margin-right: 45px;">  - ABOUT </p>
+      <p class="a2">커피콩</p>
+      <p class="a2">대표 : 안알랴줌</p>
+      <p class="a2">TEL : 031-111-2222</p>
+      <p class="a2">FAX : 070-777-5555</p>
+      <p class="a2">주소 : 경기도 의정부시 효자로</p>
     </div>
   </div>
   
