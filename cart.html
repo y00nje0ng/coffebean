@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+<style>
+    *{
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        padding: 0;
+    }
+    .cartTable0 table{
+        width: 100%;
+        height: 100px;
+        border-top: 1px solid rgb(167, 167, 167);
+        border-bottom: 1px solid rgb(167, 167, 167);
+        text-align: center;
+    }
+    .cartTable1 table{
+        border-top: 1px solid rgb(167, 167, 167);
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    .cartTable1 tr:nth-child(1) {
+        height: 20%;
+        background-color: rgb(231, 231, 231);
+    }
+    .cartTable1 tr:nth-child(2) {
+        height: 80%;
+    }
+    .cartTable1 tr,.cartTable1 td {
+        border-bottom: 1px solid rgb(167, 167, 167);
+    }
+    .buyTable table{
+        border: 1px solid rgb(167, 167, 167);
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .caution span{
+        font-size: 14px;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="cart">
+        <div class="container cartTitle">
+            <h2>장바구니</h2>
+        </div>
+        <div class="container cartTable0">
+            <table>
+                <tr>
+                    <td>장바구니에 담겨있는 상품이 없습니다.</td>
+                </tr>
+            </table>
+        </div><br>
+        <div class="container cartTable1">
+            <table>
+                <tr>
+                    <th>
+                        <input type="checkbox" name="cartCheck" id="cartCheck">
+                    </th>
+                    <th>상품정보</th>
+                    <th>상품가격</th>
+                    <th>수량</th>
+                    <th>합계</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="cartCheck" id="cartCheck">
+                    </td>
+                    <td>상품이미지 + 이름</td>
+                    <td>0000원</td>
+                    <td>00개</td>
+                    <td>0000원</td>
+                    <td><input type="button" value="삭제"></td>
+                </tr>
+            </table>
+        </div><br><br>
+        <div class="container buyTable">
+            <table>
+                <tr>
+                    <th>상품금액</th>
+                    <th rowspan="2">+</th>
+                    <th>배송비</th>
+                    <th rowspan="2">=</th>
+                    <th>결제예정금액</th>
+                    <td><input type="button" value="선택상품 주문하기"></td>
+                </tr>
+                <tr>
+                    <td>00000원</td>
+                    <td>무료</td>
+                    <td>00000원</td>
+                    <td><input type="button" value="전체상품 주문하기"></td>
+                </tr>
+            </table>
+        </div><br><br>
+        <div class="container caution">
+            <strong>주문시 주의사항</strong><br>
+            <span>14:00 이전 주문까지만 당일 발송됩니다.</span><br>
+            <span>그 이후 주문은 익일 발송 시작됩니다.</span>
+        </div>
+    </div>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
