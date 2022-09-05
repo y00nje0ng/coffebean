@@ -1,0 +1,54 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+.itemTitleS ul{
+    display:inline-block;
+}
+.itemTitleS li{
+    width: 150px;
+    height: 50px;
+    display:inline-block;
+    list-style: none;
+    border: 1px solid rgb(177, 177, 177);
+    line-height: 50px;
+}
+.itemTitleS a{
+    text-decoration: none;
+    color: rgb(139, 79, 0);
+}
+.itemTitleS a:link{
+    text-decoration: none;
+    color: rgb(139, 79, 0);
+}
+.itemTitleS a:visited{
+    text-decoration: none;
+    color: rgb(139, 79, 0);
+}
+.itemTitleS a:hover{
+    text-decoration: none;
+    color: chocolate;
+}
+.itemTitle {
+    border-bottom: 1px solid rgb(172, 172, 172);
+    text-align: center;
+}
+.itemList{
+    text-align: center;
+}
+.itemList img {
+    width: 50px;
+    height: 50px;
+}
+.itemPage {
+    text-align: center;
+}
+.pagination {
+    justify-content: center;
+}
+.itemList ul, li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0 0 0;
+}

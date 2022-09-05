@@ -1,0 +1,44 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.buyOktitle{
+    text-align: center;
+}
+.buyOkItem table{
+    width: 100%;
+    height: 200px;
+    border: 1px solid rgb(187, 187, 187);
+    text-align: center;
+}
+.buyOkItem td:nth-child(1){
+    width: 20%;
+}
+.buyOkItem td:nth-child(2){
+    width: 80%;
+    text-align: left;
+}
+.buyOkItem img{
+    width: 100px;
+    height: 100px;
+}
+.buyOkInfo table {
+    width: 100%;
+    height: 300px;
+    border: 1px solid rgb(187, 187, 187);
+    text-align: center;
+}
+.buyOkInfo th {
+    width: 20%;
+    background-color: rgb(233, 233, 233);
+}
+.buyOkInfo td {
+    width: 80%;
+    text-align: left;
+}
+.buyOkInfo span {
+    margin-left: 10px;
+}
+.mainBtn {
+    text-align: right;
+}

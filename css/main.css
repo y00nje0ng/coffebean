@@ -1,0 +1,55 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding: 0;
+}
+.carousel-item img {
+    height: 350px;
+}
+.mainAd .carousel-item img {
+    height: 200px;
+}
+h2 {
+    text-align: center;
+}
+.mainBestTitle, .mainNewTitle {
+    text-align: center;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+.mainBestItem img {
+    width: 80px;
+    height: 80px;   
+}
+.mainNewItem img {
+    width: 80px;
+    height: 80px;
+}
+.mainBestItem, .mainNewItem {
+    text-align: center;
+    margin-top: 30px;
+}
+.carousel-control-prev, .carousel-control-next {
+    background: none;
+    border: 0;
+}
+.BestPlus, .NewPlus {
+    width: 10%;
+    text-align: center;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 5px;
+}
+#carouselExampleSlidesOnly {
+    border: 1px solid rgb(189, 189, 189);
+}
+.mainInfo {
+    border: 1px solid rgb(189, 189, 189);
+}
+.mainInfo1, .mainInfo2, .mainInfo3, .mainInfo4 {
+    margin: 20px;
+}
+.mainInfo1, .mainInfo2, .mainInfo3 {
+    border-right: 1px dashed rgb(206, 206, 206);
+}
+.mainInfo span {
+    font-size: 14px;
+}
