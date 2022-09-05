@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy</title>
+<style>
+    *{
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        padding: 0;
+    }
+    .buyItemInfo{
+        width: 100%;
+        height: 200px;
+    }
+    .buyItemInfo table{
+        width: 100%;
+        height: 100%;   
+        border: 1px solid rgb(187, 187, 187);  
+    }
+    .buyItemInfo td:nth-child(1){
+        width: 20%;
+        text-align: center;
+    }
+    .buyItemInfo td:nth-child(2){
+        width: 80%;
+        text-align: left;
+    }
+    .buyItemInfo img{
+        width: 100px;
+        height: 100px;
+    }
+    .UserInfoTable {
+        width: 100%;
+        height: 300px;
+        border: 1px solid rgb(187, 187, 187);
+        text-align: center;
+    }
+    .UserInfoTable th{
+        width: 20%;
+        background-color: rgb(236, 236, 236);
+    }
+    .UserInfoTable td{
+        text-align: left;
+    }
+    .UserInfoTable input{
+        width: 80%;
+        margin-left: 10px;
+    }
+    .buyPrice table {
+        width: 100%;
+        border: 1px solid rgb(187, 187, 187);
+        text-align: center;
+    }
+    .buyPrice th{
+        width: 20%;
+        background-color: rgb(233, 233, 233);
+    }
+    .buyPrice td {
+        width: 80%;
+        text-align: left;
+    }
+    .buyPrice span {
+        margin-left: 10px;
+    }
+    .buyOrNot{
+        text-align: center;
+    }
+    .buyOrNot input{
+        width: 100px;
+        height: 40px;
+        font-weight: bolder;
+        color: aliceblue;
+    }
+    .buybuy{
+        background-color: rgb(26, 123, 235);
+    }
+    .buynot{
+        background-color: rgb(248, 36, 36);
+    }
+    .buyPayment select{
+        width: 20%;
+    }
+</style>
+</head>
+<body>
+    <div class="buy">
+        <div class="container buyTitle">
+            <h2>주문/결제</h2>
+        </div><br>
+        <div class="container buyItemInfo">
+            <table>
+                <tr>
+                    <td rowspan="3">
+                        <img src="/image/free-icon-coffee-cup-3361135.png" alt="">
+                    </td>
+                    <td>
+                        <span>상품이름</span><br>
+                        <span>상품수량</span><br>
+                        <span>상품가격</span>
+                    </td>
+                </tr>
+            </table>
+        </div><br>
+        <div class="container buyUserInfo">
+            <table class="UserInfoTable">
+                <tr>
+                    <th>수령인</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>연락처</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>우편번호</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>주소</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>배송메모</th>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div><br>
+        <div class="container buyPrice">
+            <table>
+                <tr>
+                    <th>총 상품 금액</th>
+                    <td><span>0000</span></td>
+                </tr>
+                <tr>
+                    <th>배송비</th>
+                    <td><span>0000</span></td>
+                </tr>
+                <tr>
+                    <th>결제금액</th>
+                    <td><span>0000</span></td>
+                </tr>
+            </table>
+        </div><br>
+        <div class="container buyPayment">
+            <select name="payment" id="payment">
+                <option value="" selected>결제수단선택</option>
+                <option value="">무통장입금</option>
+                <option value="">카드결제</option>
+            </select>
+        </div><br><br>
+        <div class="container buyOrNot">
+            <input type="button" value="결제하기" class="buybuy">
+            <input type="button" value="결제취소" class="buynot">
+        </div>
+    </div>
+
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
