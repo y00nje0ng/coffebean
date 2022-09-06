@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.footer{
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.abox{
+  width: 100%;
+  float: left;
+}
+
+/* .abox{
+  flex:1 100%;
+  display: flex;
+  justify-content: left;
+  height: 40px;
+}
+.abox a{
+  color: rgba(13, 20, 26, 0.856);
+  justify-content: left;
+} */
+.iconbox{
+  width: 100%;
+}
+.abox{
+  width: 100%;
+  margin-left: 15px;
+  height: 40px;
+  font-size: 14px;
+}
+.a1, .a2{
+  padding: 0 15px;
+}
+.abox p{
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  float: left;
+  
+}
+.abox p:nth-child(1){
+  margin-right: 20px;
+}
+.a1:nth-child(2){
+  font-size: 20px;
+  line-height: 10px;
+  vertical-align: middle;
+}
+
+.a1::after, .a2::after {
+  content: "|";
+  float: right;
+  color: rgba(204, 204, 204, 0.589);
+  margin-right: -17px;
+}
+
+.a1:last-child::after, .a2:last-child::after {
+  content: "";
+}
+.ibox1 img{
+  width: 150px;
+}
